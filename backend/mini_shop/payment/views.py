@@ -20,7 +20,7 @@ class GenerateTokenView(APIView):
     def get(self, request, format=None):
         try:
             client_token = gateway.client_token.generate({
-                'merchant_account_id': 'linkedweb'
+                'merchant_account_id': 'mini_shop'
             })
 
             return Response(
