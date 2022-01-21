@@ -131,9 +131,9 @@ STATIC_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-BT_MERCHANT_ID = 'tdvvgcyn2kdsggyb'
-BT_PUBLIC_KEY = 'vkyfhszvyf83gy4s'
-BT_PRIVATE_KEY = 'dd6581bf9d24fd27847b6241c1de592d'
+BT_MERCHANT_ID = env('BT_MERCHANT_ID')
+BT_PUBLIC_KEY = env('BT_PUBLIC_KEY')
+BT_PRIVATE_KEY = env('BT_PRIVATE_KEY')
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
