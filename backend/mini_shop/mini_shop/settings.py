@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'mini_shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mini_shop',
-        'USER': 'postgres',
-        'PASSWORD': 'guitar123',
-        'HOST': 'localhost',
+        'NAME': env('NAME'),
+        'USER': env('USER'),
+        'PASSWORD': env('PASSWORD'),
+        'HOST': env('HOST'),
     }
 }
 
